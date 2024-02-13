@@ -1,0 +1,63 @@
+{
+    "name": "gtdxyz/flarum-ui-links",
+    "description": "Manage Flarum navbar menu links",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/daocatt/flarum-ui-links/issues",
+        "source": "https://github.com/daocatt/flarum-ui-links"
+    },
+    "homepage": "https://dev.gtd.xyz",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://dev.gtd.xyz"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.8.0"
+    },
+    "authors": [
+        {
+            "name": "DEV",
+            "email": "dev@gtd.xyz",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gtdxyz\\Links\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "flarum-extension": {
+            "title": "GTD Links",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-bars",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "githubActions": true
+            }
+        }
+    },
+    "require-dev": {
+        "flarum/phpstan": "*"
+    },
+    "scripts": {
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache"
+    },
+    "scripts-descriptions": {
+        "analyse:phpstan": "Run static analysis"
+    }
+}

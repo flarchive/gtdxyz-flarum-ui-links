@@ -1,0 +1,46 @@
+flarum-ui-links:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Edit Link modal dialog.
+    edit_link:
+      delete_link_button: Delete Link
+      delete_link_confirmation: "Are you sure you want to delete this link?"
+      everyone-label: Everyone
+      guests-label: Guests
+      mods-label: Mods
+      internal_link: "Is it an internal link?"
+      members-label: Members
+      open_newtab: "Open link in new tab"
+      submit_button: => core.ref.save_changes
+      title: => flarum-ui-links.ref.create_link
+      title_label: => flarum-ui-links.ref.title
+      title_placeholder: => flarum-ui-links.ref.title
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      icon_additional_text: If you want to use a brand icon, the prefix is <code>fab fa-</code> instead.
+      url_description: Leave blank to show as a label.
+      url_label: => flarum-ui-links.ref.url
+      url_placeholder: => flarum-ui-links.ref.url
+      use_rel_me: Add <code>rel="me"</code> attribute for identity verification on other sites
+      visibility: Link visibility
+
+    # These strings are used in the Links page.
+    links:
+      create_button: => flarum-ui-links.ref.create_link
+      links: => flarum-ui-links.ref.links
+
+    settings:
+      show_icons_only_on_tablet: Show icons only on tablet screens
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    create_link: Create Link
+    links: Links
+    title: Title
+    url: URL

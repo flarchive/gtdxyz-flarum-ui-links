@@ -1,0 +1,46 @@
+flarum-ui-links:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Edit Link modal dialog.
+    edit_link:
+      delete_link_button: 删除
+      delete_link_confirmation: "确认删除链接?"
+      everyone-label: 所有人
+      guests-label: 访客
+      mods-label: 管理员
+      internal_link: "站内链接?"
+      members-label: 会员
+      open_newtab: "新窗口打开"
+      submit_button: => core.ref.save_changes
+      title: => flarum-ui-links.ref.create_link
+      title_label: => flarum-ui-links.ref.title
+      title_placeholder: => flarum-ui-links.ref.title
+      icon_label: => core.ref.icon
+      icon_text: => core.ref.icon_text
+      icon_additional_text: If you want to use a brand icon, the prefix is <code>fab fa-</code> instead.
+      url_description: 链接描述.
+      url_label: => flarum-ui-links.ref.url
+      url_placeholder: => flarum-ui-links.ref.url
+      use_rel_me: 增加 <code>rel="me"</code> 属性用于识别来源
+      visibility: 链接可见性
+
+    # These strings are used in the Links page.
+    links:
+      create_button: => flarum-ui-links.ref.create_link
+      links: => flarum-ui-links.ref.links
+
+    settings:
+      show_icons_only_on_tablet: 只在平板上显示图标
+
+  # Strings in this namespace are referenced by two or more unique keys.
+  ref:
+    create_link: 增加链接
+    links: Links
+    title: 标题
+    url: 链接
